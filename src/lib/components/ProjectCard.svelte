@@ -41,7 +41,7 @@
 				<p>add image pagination</p>
 			{:else}
 				<div class="flex items-center justify-center w-full">
-					<p>Graphics coming soon</p>
+					<p class="text-xl font-Oswald">Graphics coming soon</p>
 				</div>
 			{/if}
 		</div>
