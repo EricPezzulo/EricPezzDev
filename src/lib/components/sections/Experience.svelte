@@ -1,0 +1,146 @@
+<script>
+	import Badge from '$lib/components/Badge.svelte';
+</script>
+
+<section class="p-5 pt-12">
+	<div class="text-slate-300">
+		<h3 class="font-semibold text-xl font-Inter text-slate-300 pb-5">EXPERIENCE</h3>
+		<p class="font-Inter font-medium">Full Stack Developer</p>
+		<p>BuildASoil • May 2020 - Present</p>
+		<p class="py-2">
+			Developed a custom ERP system, automated business processes, and maintained the eCommerce
+			store. My role encompassed designing UI components, implementing new features, integrating
+			third party API's and services.
+		</p>
+		<div>
+			<div class="flex items-center flex-wrap">
+				<Badge
+					name={'React'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'TailwindCSS'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'JavaScript'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'TypeScript'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'HTML/CSS'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Next.js'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Express.js'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'MongoDB'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'PostgreSQL'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Prisma'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'REST'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'GraphQL'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Jest'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'JWT'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Auth.js'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'AWS'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Vercel'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+				<Badge
+					name={'Shopify'}
+					text_color={'text-blue-400'}
+					bg_color={'bg-blue-600'}
+					bg_opacity={'bg-opacity-30'}
+					text_size={'text-sm'}
+				/>
+			</div>
+		</div>
+	</div>
+</section>
