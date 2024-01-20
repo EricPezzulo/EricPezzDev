@@ -28,13 +28,13 @@ export async function POST({ request }) {
 		// Generate the presigned URL
 		const presignedUrl = await getSignedUrl(s3Client, command, { expiresIn: expires });
 
-		console.log('🪣 AWS S3 Bucket Connected!');
+		console.log('🪣 AWS S3 Bucket Connected! /projects');
 		return json({
 			status: 200,
 			body: { url: presignedUrl }
 		});
 	} catch (err) {
-		console.log('❌ AWS S3 Bucket Connected!');
+		console.log('❌ AWS S3 Bucket Connected! /projects');
 		return json({
 			status: 500,
 			body: { error: err }
