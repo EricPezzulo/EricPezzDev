@@ -88,7 +88,7 @@
 			{/if}
 
 			<button
-				class="mt-4 flex w-full items-center justify-center rounded h-10 bg-slate-800 border border-slate-600 border-opacity-75"
+				class="mt-6 flex w-full items-center justify-center rounded h-10 bg-slate-800 border border-slate-600 border-opacity-75"
 				type="submit"
 				on:click={handleSubmit}
 			>

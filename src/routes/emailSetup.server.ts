@@ -11,11 +11,12 @@ const transporter = nodemailer.createTransport({
 	}
 });
 
-transporter.verify(function (error, success) {
+transporter.verify(function (error) {
 	if (error) {
 		console.error(error);
+		console.log('❌ Nodemailer failed to connect to server!');
 	} else {
-		console.log(success, 'Server is ready to recieve emails');
+		console.log('📧 Server is ready to recieve emails!');
 	}
 });
 
