@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { slide } from 'svelte/transition';
-
+	import ToastNotification from '../ToastNotification.svelte';
+	let toastMessage: string = '';
 	let name: string = '';
 	let email: string = '';
 	let message: string = '';
@@ -9,9 +10,7 @@
 	let validationError: boolean = false;
 
 	const handleSubmit = async (e: Event) => {
-		//some submit logic goes here
 		e.preventDefault();
-
 		const formData = new FormData();
 		formData.append('name', name);
 		formData.append('email', email);
@@ -32,9 +31,16 @@
 				email = '';
 				message = '';
 				isEmailSending = false;
+				toastMessage = '';
+				setTimeout(() => {
+					toastMessage = 'Email successfully sent!';
+				});
 			} else {
 				// Handle error - optionally display an error message to the user
-				console.log('could not send');
+				toastMessage = '';
+				setTimeout(() => {
+					toastMessage = 'Email successfully sent!';
+				});
 			}
 		}
 	};
@@ -118,5 +124,8 @@
 				{/if}
 			</button>
 		</form>
+		{#if toastMessage}
+			<ToastNotification {toastMessage} duration={3000} />
+		{/if}
 	</div>
 </section>
