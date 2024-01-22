@@ -12,7 +12,6 @@
 <main>
 	<!-- <Header /> -->
 	<Hero />
-
 	<About />
 	<Experience />
 	<Projects />
