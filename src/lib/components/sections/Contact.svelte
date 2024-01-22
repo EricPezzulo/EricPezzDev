@@ -125,7 +125,7 @@
 			</button>
 		</form>
 		{#if toastMessage}
-			<ToastNotification {toastMessage} duration={3000} />
+			<ToastNotification {toastMessage} duration={10000} />
 		{/if}
 	</div>
 </section>
