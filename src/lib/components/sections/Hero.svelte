@@ -3,6 +3,6 @@
 	<h2 class="text-2xl text-slate-300 font-Oswald">Full Stack Developer</h2>
 	<br />
 	<p class="font-Inter text-slate-300">
-		I like to build intutive, engaging, and sleek applications for the web.
+		I build intutive, engaging, and sleek applications for the web.
 	</p>
 </div>

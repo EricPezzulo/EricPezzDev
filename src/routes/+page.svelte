@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Header from '$lib/components/Header.svelte';
 	import About from '$lib/components/sections/About.svelte';
+	import CodingChallenge from '$lib/components/sections/CodingChallenge.svelte';
 	import Contact from '$lib/components/sections/Contact.svelte';
 	import Experience from '$lib/components/sections/Experience.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
@@ -16,6 +16,7 @@
 	<About />
 	<Experience />
 	<Projects />
+	<CodingChallenge />
 	<Contact />
 	<Links />
 	<Footer />

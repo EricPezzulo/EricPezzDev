@@ -38,6 +38,7 @@
 	"dependencies": {
 		"@aws-sdk/client-s3": "^3.496.0",
 		"@aws-sdk/s3-request-presigner": "^3.496.0",
+		"ace-builds": "^1.32.3",
 		"nodemailer": "^6.9.8"
 	}
 }

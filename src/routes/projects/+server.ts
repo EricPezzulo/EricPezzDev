@@ -15,7 +15,7 @@ export async function POST({ request }) {
 	});
 	const bucketName = 'erics-personal-bucket';
 	const objectKey = imageName;
-	const expires = 900; // The URL will expire in 60 seconds
+	const expires = 900;
 
 	try {
 		// Create the command for the GetObject operation
