@@ -1,3 +1,0 @@
-<div>
-    resume page
-</div>

@@ -16,7 +16,9 @@
 	<Experience />
 	<Projects />
 	<CodingChallenge />
-	<Contact />
-	<Links />
+	<div class="md:grid md:grid-cols-2">
+		<Contact />
+		<Links />
+	</div>
 	<Footer />
 </main>

@@ -3,12 +3,16 @@
 	import Badge from './Badge.svelte';
 	import { slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
-
+	interface techStack {
+		name: string;
+		icon: string;
+		icon_size?: string;
+	}
 	export let description: string,
 		title: string,
 		status: string,
 		images: string = '',
-		techStack: string[] = [];
+		techStack: techStack[] = [];
 	let seeMore: boolean = false;
 	let expanding: boolean = false;
 
@@ -36,25 +40,34 @@
 		seeMore = !seeMore;
 	}
 
-	let statusBadgeProps: { backgroundColor: string; textColor: string };
+	let statusBadgeProps: { backgroundColor: string; textColor: string; icon: string };
 	if (status === 'In development') {
-		statusBadgeProps = { backgroundColor: 'bg-orange-400', textColor: 'text-orange-500' };
+		statusBadgeProps = {
+			backgroundColor: 'bg-orange-400',
+			textColor: 'text-slate-400',
+			icon: 'fluent:warning-24-filled'
+		};
 	}
 	if (status === 'In production') {
-		statusBadgeProps = { backgroundColor: 'bg-green-400', textColor: 'text-green-500' };
+		statusBadgeProps = {
+			backgroundColor: 'bg-green-400',
+			textColor: 'text-slate-400',
+			icon: 'lets-icons:check-fill'
+		};
 	}
 </script>
 
-<div class="my-5">
+<div class="my-5 md:m-2">
 	<div class="bg-slate-800 rounded p-3 border border-slate-700 border-opacity-75">
 		<div class="flex items-center justify-between pb-2">
 			<p class="text-slate-300 text-lg font-Inter font-medium">{title}</p>
 
-			<div
+			<!-- <div
 				class={`${statusBadgeProps.backgroundColor} bg-opacity-35 flex w-fit px-3 py-0.5 rounded-full items-center justify-center`}
-			>
-				<p class={`text-[12px] ${statusBadgeProps.textColor}`}>{status}</p>
-			</div>
+			> -->
+
+			<Icon icon={statusBadgeProps.icon} class={`w-6 h-6 ${statusBadgeProps.textColor}`} />
+			<!-- </div> -->
 		</div>
 		<div class="flex w-full bg-gray-700 h-36 rounded">
 			{#if images.length != 0}
@@ -76,11 +89,13 @@
 					<div transition:slide class="flex flex-wrap py-3">
 						{#each techStack as elem, index}
 							<Badge
-								name={elem}
+								name={elem.name}
 								bg_opacity={'bg-opacity-30'}
 								bg_color={'bg-blue-600'}
 								text_color={'text-blue-400'}
 								text_size={'text-sm'}
+								icon={elem.icon}
+								icon_size={elem.icon_size}
 							/>
 						{/each}
 					</div>
@@ -89,9 +104,14 @@
 			{#if !expanding}
 				<div class="flex items-center justify-center">
 					<button on:click={toggleSeeMore}>
-						<p class="text-slate-300 text-sm">{!seeMore ? 'View stack' : 'Hide stack'}</p></button
-					>
-					<Icon class="w-4 h-4" icon={!seeMore ? 'mdi:chevron-down' : 'mdi:chevron-up'} />
+						<p class="text-slate-300 text-sm inline-block">
+							{!seeMore ? 'View stack' : 'Hide stack'}
+						</p>
+						<Icon
+							class="w-4 h-4 inline-block"
+							icon={!seeMore ? 'mdi:chevron-down' : 'mdi:chevron-up'}
+						/>
+					</button>
 				</div>
 			{/if}
 		</div>

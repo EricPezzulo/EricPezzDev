@@ -1,5 +1,21 @@
-<script>
+<script lang="ts">
 	import Badge from '$lib/components/Badge.svelte';
+	const BAS_tech_stack = [
+		{ name: 'JavaScript', icon: 'ri:javascript-line' },
+		{ name: 'TypeScript', icon: 'tabler:brand-typescript' },
+		{ name: 'Next.js', icon: 'simple-icons:vercel', icon_size: 'w-4 h-4' },
+		{ name: 'React.js', icon: 'mdi:react' },
+		{ name: 'Tailwind', icon: 'mdi:tailwind' },
+		{ name: 'Node.js', icon: 'fa-brands:node' },
+		{ name: 'GCP', icon: 'simple-icons:googlecloud' },
+		{ name: 'REST', icon: 'eos-icons:api-outlined' },
+		{ name: 'MongoDB', icon: 'simple-icons:mongodb' },
+		{ name: 'Auth.js', icon: 'tabler:brand-auth0' },
+		{ name: 'Shopify', icon: 'ic:baseline-shopify' },
+		{ name: 'AWS Lambda', icon: 'simple-icons:awslambda', icon_size: 'w-4 h-4' },
+		{ name: 'AWS S3', icon: 'mdi:aws' },
+		{ name: 'Vercel', icon: 'simple-icons:vercel', icon_size: 'w-4 h-4' }
+	];
 </script>
 
 <section class="p-5 pt-12">
@@ -14,132 +30,17 @@
 		</p>
 		<div>
 			<div class="flex items-center flex-wrap">
-				<Badge
-					name={'React'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'TailwindCSS'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'JavaScript'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'TypeScript'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'HTML/CSS'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Next.js'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Express.js'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'MongoDB'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'PostgreSQL'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Prisma'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'REST'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'GraphQL'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Jest'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'JWT'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Auth.js'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'AWS'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Vercel'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
-				<Badge
-					name={'Shopify'}
-					text_color={'text-blue-400'}
-					bg_color={'bg-blue-600'}
-					bg_opacity={'bg-opacity-30'}
-					text_size={'text-sm'}
-				/>
+				{#each BAS_tech_stack as elem}
+					<Badge
+						name={elem.name}
+						text_color={'text-blue-400'}
+						bg_color={'bg-blue-600'}
+						bg_opacity={'bg-opacity-30'}
+						text_size={'text-sm'}
+						icon={elem.icon}
+						icon_size={elem.icon_size}
+					/>
+				{/each}
 			</div>
 		</div>
 	</div>
