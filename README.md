@@ -32,7 +32,7 @@ To get a local copy up and running, follow these simple steps.
 
 ### Usage
 
-This project can serve as a reference for building a modern web application using SvelteKit and integrating various technologies like Tailwind CSS and AWS S3.
+This project can serve as a reference for building a modern web application using SvelteKit and integrating various technologies like NodeMailer, Ace Editor, and AWS S3.
 
 ## Contact
 

@@ -58,7 +58,9 @@
 </script>
 
 <div class="my-5 md:m-2">
-	<div class="bg-slate-800 rounded p-3 border border-slate-700 border-opacity-75">
+	<div
+		class="bg-slate-800 hover:bg-slate-700 duration-150 ease-in-out rounded p-3 border border-slate-700 border-opacity-75"
+	>
 		<div class="flex items-center justify-between pb-2">
 			<p class="text-slate-300 text-lg font-Inter font-medium">{title}</p>
 
