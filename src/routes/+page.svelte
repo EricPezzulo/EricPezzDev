@@ -15,7 +15,7 @@
 	<About />
 	<Experience />
 	<Projects />
-	<CodingChallenge />
+	<!-- <CodingChallenge /> -->
 	<div class="md:grid md:grid-cols-2">
 		<Contact />
 		<Links />

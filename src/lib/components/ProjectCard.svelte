@@ -59,7 +59,7 @@
 
 <div class="my-5 md:m-2">
 	<div
-		class="bg-slate-800 hover:bg-slate-700 duration-150 ease-in-out rounded p-3 border border-slate-700 border-opacity-75"
+		class="bg-slate-800 hover:bg-slate-700 duration-150 ease-in-out rounded p-3 border border-slate-700 border-opacity-75 min-h-72"
 	>
 		<div class="flex items-center justify-between pb-2">
 			<p class="text-slate-300 text-lg font-Inter font-medium">{title}</p>
@@ -83,7 +83,7 @@
 			{/if}
 		</div>
 		<div class="pt-3 pb-2">
-			<p class="text-slate-300">{description}</p>
+			<p class="text-slate-300 h-14">{description}</p>
 		</div>
 		<div class="flex flex-col items-center justify-center">
 			{#if seeMore}

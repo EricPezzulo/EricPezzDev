@@ -7,3 +7,8 @@
 :root {
 	color: #fff;
 }
+@layer utilities {
+	.grid-container > :last-child:nth-child(odd) {
+		grid-column: span 2;
+	}
+}

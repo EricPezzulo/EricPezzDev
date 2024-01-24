@@ -22,7 +22,7 @@
 	<div class="text-slate-300">
 		<h3 class="font-semibold text-xl font-Inter text-slate-300 pb-5">EXPERIENCE</h3>
 		<p class="font-Inter font-medium">Full Stack Developer</p>
-		<p>BuildASoil • May 2020 - Present</p>
+		<p>BuildASoil • May 2020 - June 2023</p>
 		<p class="py-2">
 			Developed a custom ERP system, automated business processes, and maintained the eCommerce
 			store. My role encompassed designing UI components, implementing new features, integrating
