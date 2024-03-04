@@ -2,7 +2,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 </script>
 
-<section class="p-5">
+<section class="p-5 lg:px-0">
 	<h3 class="font-Inter font-semibold text-slate-300">PROJECTS</h3>
 
 	<div class="grid gap-3 grid-cols-1 md:grid-cols-2 md:grid-container">
@@ -33,7 +33,7 @@
 		<ProjectCard
 			title="LostVillage"
 			status="In development"
-			description="An ecommerce store built on Next.js, inspired from designed by Nike and Adidas."
+			description="An ecommerce store built on Next.js, inspired from designs by Nike and Adidas."
 			images={'LostVillage1.png'}
 			techStack={[
 				{ name: 'TypeScript', icon: 'tabler:brand-typescript' },
@@ -52,7 +52,7 @@
 		<ProjectCard
 			title="CoachSpot"
 			status="In development"
-			description="CoachSpot is a SaaS that was created to revolutionize the way people give and receive online health and wellness, and fitness training. Expected release Q4 2024."
+			description="CoachSpot is a SaaS that was created to revolutionize the way people give and receive online health and wellness, and fitness training."
 			techStack={[
 				{ name: 'TypeScript', icon: 'tabler:brand-typescript' },
 				{ name: 'Next.js', icon: 'simple-icons:vercel', icon_size: 'w-4 h-4' },

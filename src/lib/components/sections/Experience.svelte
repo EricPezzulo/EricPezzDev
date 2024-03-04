@@ -18,7 +18,7 @@
 	];
 </script>
 
-<section class="p-5 pt-12">
+<section class="p-5 pt-12 md:pt-0">
 	<div class="text-slate-300">
 		<h3 class="font-semibold text-xl font-Inter text-slate-300 pb-5">EXPERIENCE</h3>
 		<p class="font-Inter font-medium">Full Stack Developer</p>
