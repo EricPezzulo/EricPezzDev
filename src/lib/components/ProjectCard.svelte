@@ -57,12 +57,12 @@
 	}
 </script>
 
-<div class="my-5 md:m-2">
+<div class="my-5">
 	<div
-		class="bg-slate-800 hover:bg-slate-700 duration-150 ease-in-out rounded p-3 border border-slate-700 border-opacity-75 min-h-72"
+		class="bg-white shadow hover:bg-gray-100 duration-150 ease-in-out rounded p-3 border min-h-72"
 	>
 		<div class="flex items-center justify-between pb-2">
-			<p class="text-slate-300 text-lg font-Inter font-medium">{title}</p>
+			<p class="text-black text-lg font-Inter font-medium">{title}</p>
 
 			<!-- <div
 				class={`${statusBadgeProps.backgroundColor} bg-opacity-35 flex w-fit px-3 py-0.5 rounded-full items-center justify-center`}
@@ -71,7 +71,7 @@
 			<Icon icon={statusBadgeProps.icon} class={`w-6 h-6 ${statusBadgeProps.textColor}`} />
 			<!-- </div> -->
 		</div>
-		<div class="flex w-full bg-gray-700 h-36 rounded">
+		<div class="flex w-full bg-gray-300 h-36 rounded">
 			{#if images.length != 0}
 				<img src={presignedUrl} class="object-cover rounded w-full" alt="" />
 			{:else if images.length > 1}
@@ -83,7 +83,7 @@
 			{/if}
 		</div>
 		<div class="pt-3 pb-2">
-			<p class="text-slate-300 h-14">{description}</p>
+			<p class="text-black h-14">{description}</p>
 		</div>
 		<div class="flex flex-col items-center justify-center">
 			{#if seeMore}
@@ -91,13 +91,16 @@
 					<div transition:slide class="flex flex-wrap py-3">
 						{#each techStack as elem, index}
 							<Badge
+								hover_text_color={'group-hover:text-white'}
 								name={elem.name}
-								bg_opacity={'bg-opacity-30'}
+								text_color={'text-blue-100'}
 								bg_color={'bg-blue-600'}
-								text_color={'text-blue-400'}
+								bg_opacity={'bg-opacity-100'}
 								text_size={'text-sm'}
 								icon={elem.icon}
 								icon_size={elem.icon_size}
+								hover_bg_opacity={'hover:bg-opacity-100'}
+								hover_bg_color={'hover:bg-blue-700'}
 							/>
 						{/each}
 					</div>
@@ -105,12 +108,14 @@
 			{/if}
 			{#if !expanding}
 				<div class="flex items-center justify-center">
-					<button on:click={toggleSeeMore}>
-						<p class="text-slate-300 text-sm inline-block">
+					<button class="group" on:click={toggleSeeMore}>
+						<p
+							class="text-gray-600 group-hover:text-black duration-150 ease-in-out text-sm inline-block"
+						>
 							{!seeMore ? 'View stack' : 'Hide stack'}
 						</p>
 						<Icon
-							class="w-4 h-4 inline-block"
+							class="text-gray-600 group-hover:text-black duration-150 ease-in-out text-sm inline-block"
 							icon={!seeMore ? 'mdi:chevron-down' : 'mdi:chevron-up'}
 						/>
 					</button>

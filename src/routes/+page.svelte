@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
 	import About from '$lib/components/sections/About.svelte';
 	import CodingChallenge from '$lib/components/sections/CodingChallenge.svelte';
 	import Contact from '$lib/components/sections/Contact.svelte';
@@ -11,17 +12,14 @@
 </script>
 
 <main>
-	<!-- <Header /> -->
+	<Header />
 	<Hero />
-
 	<div class="md:grid md:grid-cols-2">
 		<TableOfContents />
-
 		<About />
-		<div></div>
+		<div />
 		<Experience />
 	</div>
-
 	<Projects />
 	<!-- <CodingChallenge /> -->
 	<div class="md:grid md:grid-cols-2">

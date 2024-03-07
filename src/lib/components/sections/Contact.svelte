@@ -51,38 +51,38 @@
 
 <section>
 	<div class="p-5">
-		<h3 class="font-Oswald text-3xl font-semibold text-slate-300 mb-5">Contact me</h3>
+		<h3 class="font-Oswald text-3xl font-semibold text-black mb-5">Contact me</h3>
 
 		<form method="POST">
 			<div>
 				<label class="flex flex-col">
-					<p class="font-Inter text-slate-300 pb-2">Name</p>
+					<p class="font-Inter text-black pb-2">Name</p>
 					<input
 						bind:value={name}
 						type="text"
 						placeholder="Full name"
-						class="text-slate-800 text-sm rounded bg-slate-300 h-7 px-2 focus:outline-none"
+						class="text-slate-800 rounded bg-white outline outline-1 outline-slate-500 h-10 px-2"
 					/>
 				</label>
 			</div>
 			<div>
 				<label class="flex flex-col">
-					<p class="font-Inter text-slate-300 pb-2 pt-2">Email</p>
+					<p class="font-Inter text-black pb-2 pt-2">Email</p>
 					<input
 						bind:value={email}
 						type="email"
 						placeholder="hello@world.com"
-						class="text-slate-800 text-sm rounded bg-slate-300 h-7 px-2 focus:outline-none"
+						class="text-slate-800 rounded bg-white outline outline-1 outline-slate-500 h-10 px-2"
 					/>
 				</label>
 			</div>
 			<div>
 				<label class="flex flex-col">
-					<p class="font-Inter text-slate-300 pb-2 pt-2">Message</p>
+					<p class="font-Inter text-black pb-2 pt-2">Message</p>
 					<textarea
 						placeholder="Your message"
 						bind:value={message}
-						class="text-slate-800 text-sm rounded bg-slate-300 h-32 p-2 focus:outline-none resize-none"
+						class="text-slate-800 rounded bg-white outline outline-1 outline-slate-500 h-32 p-2 resize-none"
 					/>
 				</label>
 			</div>
@@ -94,16 +94,16 @@
 			{/if}
 
 			<button
-				class="mt-6 flex w-full items-center justify-center rounded h-10 bg-slate-800 border border-slate-600 border-opacity-75"
+				class="mt-6 flex w-full items-center justify-center rounded h-10 bg-slate-100 border border-slate-300 hover:bg-slate-200 duratio-150 ease-in-out"
 				type="submit"
 				on:click={handleSubmit}
 			>
-				<p class="text-slate-200 text-sm font-Inter">Send</p>
+				<p class="text-slate-600 text-sm font-Inter">Send</p>
 				{#if isEmailSending}
 					<div role="status">
 						<svg
 							aria-hidden="true"
-							class=" ml-1 inline w-4 h-4 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+							class=" ml-1 inline w-4 h-4 text-slate-600 animate-spin dark:text-slate-600 fill-gray-600 dark:fill-slate-300"
 							viewBox="0 0 100 101"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@
 						<span class="sr-only">Loading...</span>
 					</div>
 				{:else}
-					<Icon class="ml-1 w-4 h-4 text-slate-200" icon="tabler:send" />
+					<Icon class="ml-1 w-4 h-4 text-slate-600" icon="tabler:send" />
 				{/if}
 			</button>
 		</form>

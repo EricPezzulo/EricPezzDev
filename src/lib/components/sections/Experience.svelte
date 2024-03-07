@@ -18,9 +18,9 @@
 	];
 </script>
 
-<section class="p-5 pt-12 md:pt-0">
-	<div class="text-slate-300">
-		<h3 class="font-semibold text-xl font-Inter text-slate-300 pb-5">EXPERIENCE</h3>
+<section class="p-5 lg:p-0 pt-12 lg:pt-5">
+	<div class="text-black">
+		<h3 class="font-semibold text-xl font-Inter text-black pb-5">EXPERIENCE</h3>
 		<p class="font-Inter font-medium">Full Stack Developer</p>
 		<p>BuildASoil • May 2020 - June 2023</p>
 		<p class="py-2">
@@ -32,13 +32,16 @@
 			<div class="flex items-center flex-wrap">
 				{#each BAS_tech_stack as elem}
 					<Badge
+						hover_text_color={'group-hover:text-white'}
 						name={elem.name}
-						text_color={'text-blue-400'}
+						text_color={'text-blue-100'}
 						bg_color={'bg-blue-600'}
-						bg_opacity={'bg-opacity-30'}
+						bg_opacity={'bg-opacity-100'}
 						text_size={'text-sm'}
 						icon={elem.icon}
 						icon_size={elem.icon_size}
+						hover_bg_opacity={'hover:bg-opacity-100'}
+						hover_bg_color={'hover:bg-blue-700'}
 					/>
 				{/each}
 			</div>

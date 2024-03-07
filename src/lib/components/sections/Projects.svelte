@@ -3,7 +3,7 @@
 </script>
 
 <section class="p-5 lg:px-0">
-	<h3 class="font-Inter font-semibold text-slate-300">PROJECTS</h3>
+	<h3 class="font-Inter text-xl font-semibold text-black">PROJECTS</h3>
 
 	<div class="grid gap-3 grid-cols-1 md:grid-cols-2 md:grid-container">
 		<ProjectCard

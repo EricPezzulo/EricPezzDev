@@ -6,7 +6,7 @@
 	<title>Eric Pezzulo</title>
 </svelte:head>
 
-<div class="bg-[#0D0A2E] flex text-white min-h-screen justify-center w-full">
+<div class="bg-white flex min-h-screen justify-center w-full">
 	<div class="w-full max-w-5xl">
 		<slot />
 	</div>
