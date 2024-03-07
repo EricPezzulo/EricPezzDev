@@ -49,7 +49,7 @@
 	}
 </script>
 
-<section>
+<section id="ContactMe">
 	<div class="p-5">
 		<h3 class="font-Oswald text-3xl font-semibold text-black mb-5">Contact me</h3>
 

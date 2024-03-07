@@ -14,12 +14,12 @@
 <main>
 	<Header />
 	<Hero />
-	<div class="md:grid md:grid-cols-2">
-		<TableOfContents />
-		<About />
-		<div />
-		<Experience />
-	</div>
+	<!-- <div class="md:grid md:grid-cols-2"> -->
+	<TableOfContents />
+	<About />
+	<div />
+	<Experience />
+	<!-- </div> -->
 	<Projects />
 	<!-- <CodingChallenge /> -->
 	<div class="md:grid md:grid-cols-2">

@@ -4,7 +4,20 @@
 
 	let logo: string = '/ericLogo.png';
 	let menuOpen: boolean = false;
-	$: console.log(menuOpen);
+
+	const scrollToSection = (e: MouseEvent) => {
+		e.preventDefault();
+		const target = e.currentTarget as HTMLAnchorElement;
+		if (target && target.getAttribute) {
+			const targetId = target.getAttribute('href')?.substring(1);
+			if (targetId) {
+				const targetElement = document.getElementById(targetId);
+				if (targetElement) {
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+				}
+			}
+		}
+	};
 </script>
 
 <div class="flex w-full justify-between pt-10 pb-5 font-Inter px-5 lg:px-0">
@@ -17,7 +30,13 @@
 	>
 		<Icon class="w-10 h-10 text-black" icon="ic:round-menu" />
 	</button>
+	<div class="text-black">
+		<a href="#ContactMe" on:click|preventDefault={scrollToSection}
+			><p class="font-Inter">Contact Me</p></a
+		>
+	</div>
 </div>
+
 {#if menuOpen}
 	<div class="lg:hidden bg-white pb-5" transition:slide={{ duration: 300 }}>
 		<div class="flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100">

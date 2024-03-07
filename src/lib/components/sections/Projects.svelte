@@ -2,7 +2,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 </script>
 
-<section class="p-5 lg:px-0">
+<section id="ProjectsSection" class="p-5">
 	<h3 class="font-Inter text-xl font-semibold text-black">PROJECTS</h3>
 
 	<div class="grid gap-3 grid-cols-1 md:grid-cols-2 md:grid-container">

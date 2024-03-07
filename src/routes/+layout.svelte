@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="bg-white flex min-h-screen justify-center w-full">
-	<div class="w-full max-w-5xl">
+	<div class="w-full max-w-7xl">
 		<slot />
 	</div>
 </div>

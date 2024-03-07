@@ -1,4 +1,4 @@
-<section class="px-5 lg:px-0">
+<section id="AboutSection" class="px-5 lg:max-w-3xl">
 	<div>
 		<h3 class="font-semibold text-xl font-Inter pb-3 text-black">ABOUT</h3>
 		<div class="text-black">
