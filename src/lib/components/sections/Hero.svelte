@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="px-5 lg:pt-28 pb-8">
+<div class="px-5 lg:pt-28 pb-8 lg:flex lg:flex-col lg:items-center">
 	<h1 class="text-5xl lg:text-7xl text-black font-semibold font-Oswald">Eric Pezzulo</h1>
 	<h2 class="text-2xl lg:text-4xl text-black font-Oswald">Full Stack Developer</h2>
 	<br />

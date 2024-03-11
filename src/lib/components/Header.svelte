@@ -5,7 +5,7 @@
 	let logo: string = '/ericLogo.png';
 	let menuOpen: boolean = false;
 
-	const scrollToSection = (e: MouseEvent) => {
+	const scrollToSection = async (e: MouseEvent) => {
 		e.preventDefault();
 		const target = e.currentTarget as HTMLAnchorElement;
 		if (target && target.getAttribute) {
@@ -14,6 +14,10 @@
 				const targetElement = document.getElementById(targetId);
 				if (targetElement) {
 					targetElement.scrollIntoView({ behavior: 'smooth' });
+					await new Promise((r) => setTimeout(r, 1000));
+					const menuHeight = document.querySelector('.dropdown-menu')?.clientHeight || 0;
+					window.scrollBy(0, -menuHeight);
+					menuOpen = false;
 				}
 			}
 		}
@@ -30,7 +34,7 @@
 	>
 		<Icon class="w-10 h-10 text-black" icon="ic:round-menu" />
 	</button>
-	<div class="text-black">
+	<div class="hidden lg:block text-black">
 		<a href="#ContactMe" on:click|preventDefault={scrollToSection}
 			><p class="font-Inter">Contact Me</p></a
 		>
@@ -38,16 +42,32 @@
 </div>
 
 {#if menuOpen}
-	<div class="lg:hidden bg-white pb-5" transition:slide={{ duration: 300 }}>
-		<div class="flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100">
+	<div
+		id="dropdown-menu"
+		class="lg:hidden bg-white pb-5 border-t border-t-gray-300"
+		in:slide={{ duration: 300 }}
+	>
+		<a
+			href="#AboutSection"
+			on:click|preventDefault={scrollToSection}
+			class="w-full flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100"
+		>
 			<p class="pl-5 text-slate-800">About</p>
-		</div>
-		<div class="flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100">
-			<p class="pl-5 text-slate-800">Project</p>
-		</div>
-		<div class="flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100">
+		</a>
+		<a
+			href="#ProjectsSection"
+			on:click|preventDefault={scrollToSection}
+			class="w-full flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100"
+		>
+			<p class="pl-5 text-slate-800">Projects</p>
+		</a>
+		<a
+			href="#ExperienceSection"
+			on:click|preventDefault={scrollToSection}
+			class="w-full flex py-2 items-center border-b border-b-gray-300 hover:bg-gray-100"
+		>
 			<p class="pl-5 text-slate-800">Experience</p>
-		</div>
+		</a>
 		<a
 			target="_blank"
 			href="/Eric_Pezzulo_Resume.pdf"

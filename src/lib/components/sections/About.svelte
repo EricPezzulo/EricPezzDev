@@ -1,7 +1,29 @@
-<section id="AboutSection" class="px-5 lg:max-w-3xl">
-	<div>
-		<h3 class="font-semibold text-xl font-Inter pb-3 text-black">ABOUT</h3>
-		<div class="text-black">
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { getPresignedUrl } from '../../../utils/getPresignedUrl';
+	let imageNameS3: string = 'guy_at_laptop.png';
+	let presignedUrl: string = '';
+	onMount(async () => {
+		const response = await fetch('/images', {
+			method: 'POST',
+			body: JSON.stringify({ imageNameS3 }),
+			headers: {
+				'content-type': 'application/json'
+			}
+		});
+		if (response.ok) {
+			const data = await response.json();
+
+			const { url } = data.body;
+			presignedUrl = url;
+		}
+	});
+</script>
+
+<section id="AboutSection" class="flex flex-col px-5 pt-5 lg:pb-10">
+	<h3 class="font-semibold text-xl font-Inter pb-3 text-black">ABOUT</h3>
+	<div class="lg:max-w-5xl lg:grid lg:grid-cols-[3fr,1fr] lg:items-center">
+		<div class="text-black lg:max-w-2xl">
 			<p>
 				I took up programing in 2015 while taking an introductory programming class in college. I
 				learned how to write <span class="text-blue-600 font-medium">VB.NET</span> and
@@ -47,6 +69,9 @@
 				movies, playing video games, or working out at the gym. If you're lucky you might catch me
 				in a Primeagen twitch chat.
 			</p> -->
+		</div>
+		<div class="hidden lg:flex justify-center">
+			<img class="w-64 h-64" src={presignedUrl} alt="" />
 		</div>
 	</div>
 </section>
