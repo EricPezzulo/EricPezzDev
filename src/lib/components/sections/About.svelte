@@ -25,7 +25,7 @@
 	<div class="lg:max-w-5xl lg:grid lg:grid-cols-[3fr,1fr] lg:items-center">
 		<div class="text-black lg:max-w-2xl">
 			<p>
-				I took up programing in 2015 while taking an introductory programming class in college. I
+				I began programing in 2015 while taking an introductory programming class in college. I
 				learned how to write <span class="text-blue-600 font-medium">VB.NET</span> and
 				<span class="text-blue-600 font-medium">C++</span>, while also learning how to create GUI's
 				with the help of <span class="text-blue-600 font-medium">Visual Studio</span>.

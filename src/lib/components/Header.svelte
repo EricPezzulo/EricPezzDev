@@ -7,6 +7,7 @@
 
 	const scrollToSection = async (e: MouseEvent) => {
 		e.preventDefault();
+
 		const target = e.currentTarget as HTMLAnchorElement;
 		if (target && target.getAttribute) {
 			const targetId = target.getAttribute('href')?.substring(1);
@@ -14,6 +15,7 @@
 				const targetElement = document.getElementById(targetId);
 				if (targetElement) {
 					targetElement.scrollIntoView({ behavior: 'smooth' });
+
 					await new Promise((r) => setTimeout(r, 1000));
 					const menuHeight = document.querySelector('.dropdown-menu')?.clientHeight || 0;
 					window.scrollBy(0, -menuHeight);
