@@ -47,7 +47,7 @@
 				I was immediately drawn to the <span class="text-blue-600 font-medium">React</span>
 				ecosystem and found my passion in web development. After building tons of projects and confidence
 				in my skills as a developer, I landed my first
-				<span class="text-blue-600 font-medium">Full Stack Development</span> job in 2020.
+				<span class="text-blue-600 font-medium">Full Stack Development</span> job in 2022.
 			</p>
 
 			<br />

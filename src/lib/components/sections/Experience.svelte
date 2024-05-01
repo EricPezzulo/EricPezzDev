@@ -62,7 +62,7 @@
 				{/each}
 			</div>
 			<p class="font-Inter font-medium">Full Stack Developer</p>
-			<p>BuildASoil • May 2020 - June 2023</p>
+			<p>BuildASoil • May 2022 - June 2023</p>
 			<p class="py-2">
 				Developed a custom ERP system, automated business processes, and maintained the eCommerce
 				store. My role encompassed designing UI components, implementing new features, integrating
