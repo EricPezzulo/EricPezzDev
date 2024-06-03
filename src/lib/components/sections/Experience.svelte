@@ -38,7 +38,7 @@
 		<h3 class="font-semibold text-xl font-Inter text-black pb-5">EXPERIENCE</h3>
 
 		<p class="font-Inter font-medium">Full Stack Software Engineer</p>
-		<p>Wall To Wall Contracting • December 2023 - Present</p>
+		<p>Wall To Wall Contracting • October 2023 - Present</p>
 		<p class="py-2">
 			Designed and implemented a bespoke business software, signicantly enhancing operational
 			eciency and scalability, which allowed the company to continually increase its client base. As
